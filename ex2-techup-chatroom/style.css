@@ -1,1 +1,78 @@
-/* Start coding here */
+h1 {
+  display: flex;
+  background-color: grey;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  color: white;
+}
+
+.messages {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-box {
+  display: flex;
+}
+
+.msg-mine {
+  display: flex;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  min-width: 120px;
+  justify-content: flex-start;
+  background-color: greenyellow;
+  margin-left: auto;
+}
+
+.event {
+  position: relative;
+  background-color: grey;
+  z-index: 1;
+}
+.x {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background-color: #696969;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.message-box:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 6%;
+  left: 100%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: greenyellow;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10px;
+  margin-bottom: -20px;
+}
+
+.msg-others {
+  display: flex;
+  min-width: 120px;
+  justify-content: flex-start;
+  background-color: grey;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: auto;
+  width: 100px;
+}
